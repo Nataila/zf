@@ -139,6 +139,14 @@ div.chart-icon {
   border-top: 1px solid #000000;
 }
 
+.font-yellow {
+  color: #fffb73;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* 通用表格 */
 .table-app {
   width: 85%;

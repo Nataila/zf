@@ -2,3 +2,25 @@ body {
   background: url("../img/jilv-bg.jpg") #000000;
   background-size: cover;
 }
+
+div.content {
+  margin-top: 97px;
+}
+
+div.content > div {
+  margin: 0 auto;
+  width: 1280px;
+  min-width: 1280px;
+  color: #FFFFFF;
+}
+
+.div-left {
+  width: 50%;
+  float: left;
+}
+.div-right table{
+  width: 40%;
+}
+.div-left-top > h3:first-child {
+  margin-top: 0px;
+}
