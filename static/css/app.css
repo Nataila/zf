@@ -6,6 +6,14 @@ i {
   cursor: pointer;
   display: inline-block;
 }
+i.pulldown {
+  width: 10px;
+  height: 10px;
+  background: url('../img/down.png') no-repeat;
+}
+i.pullup {
+  background: url('../img/up.png') no-repeat !important;
+}
 i.table {
   width: 31px;
   height: 30px;
@@ -45,6 +53,7 @@ div.chart-icon {
 /* nav */
 .nav {
   height: 70px;
+  min-width: 1280px;
   border: 1px solid;
   background-color: #505862;
 }
@@ -62,9 +71,72 @@ div.chart-icon {
   float: left;
   font-size: 28px;
   margin-left: 20px;
+  margin-right: 20px;
   font-weight: 900;
   color: #d1d0d0;
   line-height: 70px;
+}
+.nav .nav-btn-groups {
+  float: left;
+  margin-top: 20px;
+}
+.nav .nav-btn-groups li {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: url("../img/nav-btn-groups.jpg");
+  list-style: none;
+}
+.nav .nav-btn-groups li + li {
+  margin-left: 10px;
+}
+.nav .select .year-input {
+  width: 90px;
+  line-height: 32px;
+  text-align: center;
+  height: 32px;
+  display: inline-block;
+  background-color: #353a41;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+.nav .select .pull-down {
+  cursor: pointer;
+  width: 36px;
+  text-align: center;
+  line-height: 32px;
+  height: 32px;
+  position: relative;
+  left: -4px;
+  display: inline-block;
+  border-radius: 3px;
+  background: url("../img/nav-btn-groups.jpg");
+}
+.nav .select {
+  position: relative;
+  margin-top: 18px;
+  width: 150px;
+  float: right;
+}
+.nav .options {
+  position: relative;
+  left: -38px;
+  color: #FFFFFF;
+  margin-top: 3px;
+}
+.nav .options li{
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 88px;
+  list-style: none;
+  background: #353a41;
+}
+.nav .options li + li{
+  border-top: 1px solid #000000;
 }
 
 /* 通用表格 */
@@ -94,3 +166,5 @@ div.chart-icon {
 .table-app td:last-child {
   border-right: none;
 }
+
+
