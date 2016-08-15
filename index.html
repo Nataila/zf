@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="./static/css/main.css">
+<link href="./static/jiaoben924/css/reset.css" type="text/css" rel="stylesheet" />
+<style>
+/*样式格式化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+fieldset, img { border: 0; }
+img { display:inline-block; }
+
+ol, ul { list-style: none outside none; }
+#wrapper{ width:1000px;margin:auto;position:relative; }
+.show_images_list_li {
+position: absolute;
+cursor: pointer;
+vertical-align:bottom; display:block
+}
+
+#belt {display: block;height: 122px;left: 200px;line-height: 1000px;overflow: hidden;position: absolute;top: 1px;width: 149px;}
+
+.btn { background:url(./static/img/btn.jpg) no-repeat; width:101px; height:25px; margin:auto; position:relative; padding-top:350px;}
+.btn  a{width:17px; height:15px; overflow:none; display:block;background:url(./static/img/btn.jpg)  no-repeat; cursor: pointer;float:left;}
+.btn  a.active{ background:url(./static/img/btn.jpg) -17px 0 no-repeat;}
+
+
+</style>
+<script type="text/javascript" src="./static/js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+  $(".btn").show();
+  $(".btn  a:first").addClass("active");  
+  $().gallery({
+    current: [".show_images_1",".show_images_1_img"],
+    left: [".show_images_2",".show_images_2_img"],
+    right: [".show_images_3",".show_images_3_img"],
+  none: [".show_images_4",".show_images_4_img"],
+    duration: 500,
+    start: function() {
+      $(".header_text").fadeOut(150);
+    },
+    end: function() {
+      $(".header_text").fadeIn(150);
+    },
+    autoChange : true,
+    changeTimeout: 3000,
+    stopTarget : ".header_stage"
+  });
+});
+</script>
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <p class='ft-size-40 ft-blod ft-blue title-1'>中共黔南州委州纪委</p>
+      <p class='ft-size-52 ft-blod ft-blue title-2'>两个责任落实与监督大数据分析中心</p>
+    </div>
+    <div id="wrapper">
+      <div id="maincontent">
+        <div id="huadong">
+          <ul class="show_images_list">
+            <li class="show_images_list_li show_images_1" style="z-index: 15; top: 1px; left: 200px;"><img  class="show_images_1_img" src="static/img/1.png" alt="" title="" style="width: 599px; height: 353px;"></li>
+            <li class="show_images_list_li show_images_2" style="z-index: 10; top: 20px; left: 0px;"><img class="show_images_2_img" src="static/img/4.png"alt="" title="" style="width: 527px; height: 310px;"></li>
+            <li class="show_images_list_li show_images_3" style="z-index: 5; top: 20px; left: 459px;"><img class="show_images_3_img" src="static/img/2.png" alt="" title="" style="width: 527px; height: 310px;"></li>
+            <li class="show_images_list_li show_images_4" style="z-index: 0; top: 20px; left: 200px;"><img class="show_images_4_img" src="static/img/3.png" alt="" title="" style="width: 527px; height: 310px;"></li>
+          </ul>
+          <script type="text/javascript" src="./static/jiaoben924/js/image_gallery.js"></script>
+          <div class="header_text"  id="belt"></div>
+        </div>
+        <div class="btn"> <a class="btn1" rel="1" ></a> <a class="btn2" rel="2" ></a> <a class="btn3" rel="3" ></a> <a class="btn4" rel="4" ></a> </div>
+      </div>
+    </div>
+    <div class="footer">
+      <form action="">
+        <input type="text" name="username" placeholder="用户名">
+        <input type="password" name="username" placeholder="密码">
+        <button class="login-btn"><span>登录</span></button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

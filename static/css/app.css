@@ -1,0 +1,23 @@
+*{
+  font-family: '微软雅黑'
+}
+i.table {
+  background: url('../img/table.png') no-repeat;
+}
+i.chart {
+  background: url('../img/chart.png') no-repeat;
+}
+.table-app {
+  width: 90%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+  margin-top: 90px;
+}
+.table-app td {
+  text-align: center;
+  border-style: solid;
+  border-color: #5e5e5e;
+  border-width: 1px;
+}
