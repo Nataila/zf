@@ -7,6 +7,8 @@ i.table {
 i.chart {
   background: url('../img/chart.png') no-repeat;
 }
+
+/* 通用表格 */
 .table-app {
   width: 90%;
   margin: 0 auto;
@@ -20,4 +22,16 @@ i.chart {
   border-style: solid;
   border-color: #5e5e5e;
   border-width: 1px;
+}
+.table-app tr:first-child td {
+  border-top: none;
+}
+.table-app tr:last-child td {
+  border-bottom: none;
+}
+.table-app td:first-child {
+  border-left: none;
+}
+.table-app td:last-child {
+  border-right: none;
 }
