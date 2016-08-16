@@ -15,7 +15,16 @@
       <div class="middle">纪律作风建设动态指数分析</div>
     </div>
     <div class="content">
-      <table class='table-app'>
+      <div class="icons">
+        <div class='chart-icon'>
+          <i class="chart" data-content='chart'></i>
+        </div>
+        <div class='table-icon'>
+          <i class="table" data-content='table'></i>
+        </div>
+      </div>
+      <!-- 表格内容 -->
+      <table class='table-app sub-content' id='table-content'>
         <tr>
           <td></td>
           <td colspan="5">廉政提醒</td>
@@ -43,7 +52,14 @@
         <tr><td>总计</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td> <td>23</td>
         </tr>
       </table>
+      <!-- 图表内容 -->
+      <div class='sub-content hide' id='chart-content'>
+        <div class="pie-chart"><h2>玫瑰图</h2></div>
+        <div class="bar-chart"><h2>柱状图</h2></div>
+      </div>
     </div>
   </div>
+  <script src="../static/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../static/js/jilv.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
