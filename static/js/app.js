@@ -22,8 +22,13 @@ $(document).ready(function () {
     }
     $('.slide-container .slide-content').animate({'left': spansWidthNew});
   });
+  // 弹出框弹出
   $('.slide-container .slide-content span').on('click', function () {
     var modalName = $(this).closest('.slide-content').data('modal');
     $('#' + modalName).show();
-  })
+  });
+  // 弹出框消失
+  $('#people-table-fa').on('click', function () {
+    $(this).hide();
+  });
 });
