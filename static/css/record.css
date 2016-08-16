@@ -5,11 +5,11 @@
 .font-line {
   margin: 30px 0;
 }
-.table-app tr:first-child td {
+.zhuti-table tr:first-child td {
   height: 80px;
 }
 .slide-container {
-  height: 150px !important;
+  height: 180px !important;
 }
 .slide-span-footer {
   position: absolute;
@@ -28,4 +28,137 @@
 .font-count {
   padding: 10px;
   white-space: normal;
+}
+#people-table-son p {
+  margin: 7px 0;
+}
+#people-table-son > div {
+  width: 840px;
+  margin: 0 auto;
+  color: #353535;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.jiandu-top {
+  box-sizing: border-box;
+  padding: 5px 50px;
+  background: #E5E5E5;
+}
+.jiandu-select {
+  margin-top: 40px !important;
+  text-align: right;
+  background: transparent !important;
+}
+.jiandu-select .btn-down {
+  display: inline-block;
+  height: 24px;
+  width: 25px;
+  background: url('../img/down.png') center center no-repeat #F67623;
+}
+.jiandu-select .input{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  top: -8px;
+  width: 148px;
+  height: 24px;
+  line-height: 24px;
+  background: #E5E5E5;
+}
+.jiandu-score .score-span {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+.jiandu-score .score-l, .jiandu-score .score-r {
+  display: inline-block;
+  width: 417px;
+  height: 36px;
+  background: #E5E5E5;
+}
+.jiandu-score span {
+  font-size: 18px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+.score-l-son-l {
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding-right: 20px;
+  text-align: right;
+  width: 290px;
+  background: #F67623;
+}
+.score-l-son-l:nth-child(2) {
+  float: right;
+}
+.score-l-son-r span {
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  margin-top: 5px;
+  width: 57px;
+}
+.score-l-son-r span:first-child {
+  border-right: 2px solid #F67623;
+}
+.jiandu-time, .jiandu-level {
+  background: #E5E5E5;
+}
+.jiandu-time span, .jiandu-level span, .jiandu-month span{
+  display: inline-block;
+  text-align: center;
+  height: 36px;
+  font-size: 18px;
+  line-height:36px;
+}
+.jiandu-time span {
+  width: 33%;
+}
+.level-l {
+  width: 42%;
+}
+.level-m {
+  width: 15%;
+  color: #FFFFFF;
+  background: #F67623;
+}
+.level-r {
+  width: 41%;
+}
+.time-m {
+  color: #FFFFFF;
+  background: #F67623;
+}
+.jiandu-month {
+  height: 36px;
+  width: 130px !important;
+  margin: 0 auto !important;
+  margin-top: 20px !important;
+  background: #E5E5E5;
+}
+.jiandu-month span {
+  width: 30%;
+}
+.jiandu-month span:nth-child(2) {
+  color: #FFFFFF;
+  background: #F67623;
+}
+.jiandu-content {
+
+}
+.jiandu-content span {
+  word-break: break-word;
+  box-sizing: border-box;
+  padding: 5px 50px;
+  display: inline-block;
+  width: 404px;
+  background-color: #E5E5E5;
+}
+.jiandu-content span + span {
+  margin-left: 20px;
+}
+#table-minsheng-app {
+  margin-top: 50px;
 }

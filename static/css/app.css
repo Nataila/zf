@@ -242,14 +242,14 @@ div.chart-icon {
   height: 100%;
   float: left;
   cursor: pointer;
-  border: 1px solid red;
+  background: url('../img/arrow-left.png') center center no-repeat;
 }
 .slide-container .right {
   width: 5%;
   height: 100%;
   float: right;
   cursor: pointer;
-  border: 1px solid red;
+  background: url('../img/arrow-right.png') center center no-repeat;
 }
 .slide-container .middle {
   width: 88%;
@@ -260,7 +260,6 @@ div.chart-icon {
 .slide-container .slide-content {
   height: 100%;
   position: relative;
-  overflow: hidden;
   white-space: nowrap;
   left: 0px;
 }
@@ -282,13 +281,7 @@ div.chart-icon {
 /* cycle 按钮 */
 
 .cycle-out.selected {
-  border: 1px solid #eeeeee;
-}
-.cycle-out.selected .cycle-mid {
-  border: 1px solid #eeeeee;
-}
-.cycle-out.selected .cycle-inner {
-  border: 3px solid red;
+  background: url('../img/cycle-bg.png');
 }
 .cycle-inner .inner-top {
   height: 55px;
@@ -322,7 +315,7 @@ div.chart-icon {
   box-sizing: border-box;
   width: 160px;
   height: 160px;
-  padding: 10px;
+  padding: 9px;
   border-radius: 50%;
 }
 .cycle-mid {
@@ -335,9 +328,25 @@ div.chart-icon {
 .cycle-inner {
   box-sizing: border-box;
   color: #FFFFFF;
-  background: #989898;
+  background: rgba(152,152,152,0.2);
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid red;
+  padding-left:3px;
+  background: url('../img/no-select.png') rgba(152, 152, 152, 0.2);
+}
+
+/* 弹出框 */
+#people-table-fa {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+#people-table-son {
+  width: 902px;
+  padding: 30px 0px 60px;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: #cccccc;
 }
