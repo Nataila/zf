@@ -3,15 +3,13 @@ body {
   background-size: cover;
 }
 
-div.content {
-  border: 1px solid red;
-}
-
 div.content #county {
-  margin-top: 97px;
+  position: inherit;
+  padding-top: 97px;
 }
 
 div.content > div {
+  position: relative;
   overflow: hidden;
   margin: 0 auto;
   width: 90%;
@@ -53,14 +51,15 @@ div.content > div {
   text-align: center;
 }
 #section {
-  position: relative;
+  position: inherit;
   padding-top: 97px;
 }
 .average {
+  font-size: 18px;
   border: 1px solid blue;
   position: absolute;
-  top: 5px;
-  right: 0;
+  top: 85px;
+  right: 10px;
 }
 .average-value {
   margin-top: 5px;
@@ -72,4 +71,7 @@ div.content > div {
   margin-top: 97px;
   line-height: 500px;
   height: 500px;
+}
+#report {
+  padding-top: 97px;
 }

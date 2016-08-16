@@ -1,0 +1,48 @@
+.content .people-pie-charts > div {
+  width: 45%;
+  height: 450px;
+  float: left;
+  text-align: center;
+}
+.people-done {
+  float: right !important;
+}
+.content {
+  margin-top: 30px;
+  clear: both;
+}
+.people-pie-charts {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.font-count {
+  line-height: 44px;
+}
+.pie {
+  height: 400px;
+  line-height: 400px;
+}
+.font-line {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#people-table-fa {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+#people-table-son {
+  width: 800px;
+  padding: 30px 0;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: #cccccc;
+}
+#people-table {
+  background: #E5E5E5;
+  color: #353535;
+}
+#people-table td {
+  border-color: #bdbdbd;
+}

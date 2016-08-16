@@ -2,6 +2,11 @@
 *{
   font-family: '微软雅黑'
 }
+body {
+  margin: 0;
+  background: url("../img/jilv-bg.jpg") #000000;
+  background-size: cover;
+}
 i {
   cursor: pointer;
   display: inline-block;
@@ -53,7 +58,7 @@ div.chart-icon {
 /* nav */
 .nav {
   height: 70px;
-  min-width: 1280px;
+  min-width: 1250px;
   border: 1px solid;
   background-color: #505862;
 }
@@ -61,6 +66,7 @@ div.chart-icon {
   width: 60px;
   height: 70px;
   text-align: center;
+  cursor: pointer;
   float: left;
   background: url("../img/left.jpg");
 }
@@ -138,9 +144,17 @@ div.chart-icon {
 .nav .options li + li{
   border-top: 1px solid #000000;
 }
-
+.font-origin {
+  color: #fe7729;
+}
 .font-yellow {
   color: #fffb73;
+}
+.font-green {
+  color: #acdd6d;
+}
+.font-red {
+  color: #ff7173;
 }
 .text-center {
   text-align: center;
@@ -159,13 +173,14 @@ div.chart-icon {
   background: rgba(255,255,255,0.1);
 }
 .table-app td {
-  height: 28px;
+  height: 30px;
   text-align: center;
   border-style: solid;
   border-color: #5e5e5e;
   border-width: 1px;
 }
 .table-app tr:first-child td {
+  height: 42px;
   border-top: none;
 }
 .table-app tr:last-child td {
@@ -179,3 +194,78 @@ div.chart-icon {
 }
 
 
+/* 主体内容 */
+.content {
+  width: 90%;
+  min-width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.font-line {
+  font-size: 22px;
+  color: #fe7729;
+  text-align: center;
+}
+.font-line::before, .font-line::after {
+  border-top: 1px solid #d1d0d0;
+  height: 1px;
+  display: inline-block;
+  width: 43%;
+  content: '';
+  position: relative;
+  top: -5px;
+}
+.font-line::before {
+  margin-right: 20px;
+}
+.font-line::after {
+  margin-left: 20px;
+}
+
+/* 左右滑动 */
+.slide-container {
+  width: 100%;
+  position: relative;
+}
+.slide-container .left {
+  width: 5%;
+  height: 72px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.slide-container .right {
+  width: 5%;
+  height: 72px;
+  float: right;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.slide-container .middle {
+  width: 88%;
+  height: 72px;
+  float: left;
+  overflow: hidden;
+}
+.slide-container .slide-content {
+  height: 72px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 0px;
+}
+.slide-container .slide-content span {
+  cursor: pointer;
+  display: inline-block;
+  width: 154px;
+  height: 72px;;
+  margin-left: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.slide-container .slide-content .slide-title {
+  height: 28px;
+  line-height: 28px;
+  background-color: rgba(255, 255, 255, 0.2);
+}

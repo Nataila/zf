@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="../static/css/app.css">
+<link rel="stylesheet" href="../static/css/duty.css">
+<link rel="stylesheet" href="../static/css/subject.css">
+<body>
+  <div class="main">
+    <div class="nav">
+      <div class="left">
+        <img src="../static/img/arrow.png" alt="">
+      </div>
+      <div class="middle">落实监督责任动态指数分析</div>
+      <ul class='nav-btn-groups'>
+        <li data-content='county'>各县纪委对比分析</li>
+        <li data-content='section'>部门类别对比分析</li>
+        <li data-content='jigong'>共性因子分析</li>
+        <li data-content='report'>履责动态成绩报表</li>
+      </ul>
+      <div class='select'>
+        <span class="year-input">2016年</span>
+        <span class="pull-down"><i class="pulldown"></i></span>
+        <ul class="options hide">
+          <li>2015年</li>
+          <li>2014年</li>
+          <li>2013年</li>
+          <li>2012年</li>
+          <li>2011年</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div id="report">
+        <div class='div-left'>
+          <div class="div-left-top">
+            <h3 class="text-center font-green">履责动态成绩最好的前五部门／单位</h3>
+            <table class="table-app">
+              <tr><td></td> <td>累计平均</td><td>名次</td></tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-green">3</span>/56</td></tr>
+              <tr><td>荔波县</td><td>98</td><td><span class="font-green">5</span>/45</td></tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-green">3</span>/56</td></tr>
+              <tr><td>发改委</td><td>89</td><td><span class="font-green">3</span>/56</td></tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-green">3</span>/56</td></tr>
+            </table>
+          </div>
+          <div class="div-left-bottom">
+            <h3 class="text-center font-red">履责动态成绩较差的前五部门／单位</h3>
+            <table class="table-app">
+              <tr><td></td> <td>累计平均</td> <td>名次</td> </tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-red">3</span>/56</td></tr>
+              <tr><td>荔波县</td><td>98</td><td><span class="font-red">5</span>/45</td></tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-red">3</span>/56</td></tr>
+              <tr><td>发改委</td><td>89</td><td><span class="font-red">3</span>/56</td></tr>
+              <tr><td>龙里县</td><td>98</td><td><span class="font-red">3</span>/56</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="div-right">
+          <h3 class="text-center font-yellow">其它部门／单位</h3>
+          <table class="table-app">
+            <tr><td></td><td>累计平均</td><td>名次</td></tr>
+            <tr><td>龙里县</td><td>98</td><td><span class="font-yellow">3</span>/56</td></tr>
+            <tr><td>荔波县</td><td>98</td><td><span class="font-yellow">5</span>/45</td></tr>
+            <tr><td>龙里县</td><td>98</td><td><span class="font-yellow">3</span>/56</td></tr>
+            <tr><td>发改委</td><td>89</td><td><span class="font-yellow">3</span>/56</td></tr>
+            <tr><td>龙里县</td><td>98</td><td><span class="font-yellow">3</span>/56</td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class='hide' id="section">
+        <div class="charts">
+          <div class="left-chart">
+            <div class='bar'>左侧图表</div>
+          </div>
+          <div class="right-chart">
+            <div class='bar'>右侧图表</div>
+          </div>
+        </div>
+        <div class='average'>
+          <div class="average-font">截止上月全州积累加权平均成绩</div>
+          <div class='average-value'>
+            <span class='num'>96.3</span>
+          </div>
+        </div>
+      </div>
+      <div class='hide' id="jigong">
+        <div class="charts">
+          图表
+        </div>
+      </div>
+      <div class='hide' id="county">
+        <div class="charts">
+          <div class="left-chart">
+            <div class='bar'>左侧图表</div>
+          </div>
+          <div class="right-chart">
+            <div class='bar'>右侧图表</div>
+          </div>
+        </div>
+        <div class='average'>
+          <div class="average-font">截止上月全州积累加权平均成绩</div>
+          <div class='average-value'>
+            <span class='num'>96.3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../static/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../static/js/duty.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
