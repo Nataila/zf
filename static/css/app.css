@@ -121,7 +121,7 @@ div.chart-icon {
   float: right;
 }
 .nav .options {
-  position: relative;
+  position: absolute;
   left: -38px;
   color: #FFFFFF;
   margin-top: 3px;
@@ -142,9 +142,12 @@ div.chart-icon {
 .font-yellow {
   color: #fffb73;
 }
-
 .text-center {
   text-align: center;
+}
+.clear {
+  clear: both;
+  display: block;
 }
 
 /* 通用表格 */
