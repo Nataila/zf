@@ -156,6 +156,12 @@ div.chart-icon {
 .font-red {
   color: #ff7173;
 }
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
 }
@@ -227,40 +233,43 @@ div.chart-icon {
 /* 左右滑动 */
 .slide-container {
   width: 100%;
+  overflow: hidden;
   position: relative;
+  height: 72px;
 }
 .slide-container .left {
   width: 5%;
-  height: 72px;
+  height: 100%;
   float: left;
   cursor: pointer;
   border: 1px solid red;
 }
 .slide-container .right {
   width: 5%;
-  height: 72px;
+  height: 100%;
   float: right;
   cursor: pointer;
   border: 1px solid red;
 }
 .slide-container .middle {
   width: 88%;
-  height: 72px;
+  height: 100%;
   float: left;
   overflow: hidden;
 }
 .slide-container .slide-content {
-  height: 72px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
   left: 0px;
 }
-.slide-container .slide-content span {
+.slide-container .slide-content > span {
+  position: relative;
   cursor: pointer;
   display: inline-block;
   width: 154px;
-  height: 72px;;
+  height: 100%;
   margin-left: 25px;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -268,4 +277,67 @@ div.chart-icon {
   height: 28px;
   line-height: 28px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* cycle 按钮 */
+
+.cycle-out.selected {
+  border: 1px solid #eeeeee;
+}
+.cycle-out.selected .cycle-mid {
+  border: 1px solid #eeeeee;
+}
+.cycle-out.selected .cycle-inner {
+  border: 3px solid red;
+}
+.cycle-inner .inner-top {
+  height: 55px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #FFFFFF;
+}
+.cycle-inner .inner-bottom {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+}
+.cycle-tab {
+  float: left;
+  width: 160px;
+  height: 200px;
+  position: relative;
+  margin-left: 10%;
+}
+.record-tab-name {
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  bottom: 0;
+}
+.cycle-out {
+  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.cycle-mid {
+  box-sizing: border-box;
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.cycle-inner {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  background: #989898;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid red;
 }
